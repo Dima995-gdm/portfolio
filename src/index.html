@@ -128,7 +128,11 @@
         <div class="container">
             <div class="about__content">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__text">
                     <h2 class="title title_fz16 about__subtitle">Про меня</h2>
@@ -488,8 +492,6 @@
                         </div>
                     </form>
                 </div>
-
-
             </div>
         </div>
     </section>
